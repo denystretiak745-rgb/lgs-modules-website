@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LGS — Професійний 3D друк в Україні</title>
+  <meta name="description" content="LGS — професійний 3D друк деталей, прототипів та корпусів в Україні. Швидке та якісне виготовлення з готових 3D-моделей.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <svg class="logo__icon" width="28" height="20" viewBox="0 0 28 20" fill="none">
+          <rect y="0" width="28" height="3" rx="1.5" fill="currentColor"/>
+          <rect y="8.5" width="20" height="3" rx="1.5" fill="currentColor"/>
+          <rect y="17" width="28" height="3" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="logo__text">LGS</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#how-it-works" class="nav__link">Як це працює</a>
+        <a href="#services" class="nav__link">Послуги</a>
+        <a href="#about" class="nav__link">Про нас</a>
+        <a href="#contact" class="nav__btn btn btn--primary nav__btn--mobile">Зв'язатися</a>
+      </nav>
+
+      <a href="#contact" class="nav__btn btn btn--primary nav__btn--desktop">Зв'язатися</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Приймаємо 3D-моделі (STL, OBJ, STEP)
+        </div>
+        <h1 class="hero__title">
+          Професійний <em>3D-друк</em> ваших ідей
+        </h1>
+        <p class="hero__text">
+          Швидке та якісне виготовлення деталей,
+          прототипів та корпусів. Ми оптимізували процес,
+          тому <strong>друкуємо тільки з готових 3D-моделей</strong>. Не
+          витрачайте час на погодження креслень —
+          завантажуйте файл і отримуйте виріб.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Завантажити модель</a>
+          <a href="#services" class="btn btn--outline btn--lg">Всі послуги</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" alt="3D друк" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section how-it-works" id="how-it-works">
+    <div class="container">
+      <h2 class="section__title">Як це <em>працює</em></h2>
+      <p class="section__subtitle">Простий та прозорий процес замовлення без зайвих кроків.</p>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step__number">01</span>
+          <h3 class="step__title">Завантажте модель</h3>
+          <p class="step__text">Ви завантажуєте готову 3D-модель (STL, OBJ, STEP) через нашу форму замовлення.</p>
+        </div>
+        <div class="step">
+          <span class="step__number">02</span>
+          <h3 class="step__title">Прорахунок</h3>
+          <p class="step__text">Ми аналізуємо модель, підбираємо найкращу технологію і матеріал, та надсилаємо ціну.</p>
+        </div>
+        <div class="step">
+          <span class="step__number">03</span>
+          <h3 class="step__title">Друк та Доставка</h3>
+          <p class="step__text">Після оплати деталь відправляється на друк і доставляється вам Новою Поштою по всій Україні.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <div class="container">
+      <h2 class="section__title">Популярні <em>послуги</em></h2>
+      <p class="section__subtitle">Спектр завдань, які вирішує FDM 3D-друк: від поодиноких прототипів до серійних партій виробів.</p>
+
+      <div class="services__grid">
+        <div class="services__image">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&q=80" alt="3D друковані деталі" loading="lazy">
+        </div>
+        <div class="services__cards">
+          <div class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__num">01</span>
+              <svg class="service-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 7h10M7 12h10M7 17h10"/></svg>
+            </div>
+            <h3 class="service-card__title">Серійний 3D друк</h3>
+            <p class="service-card__text">Потокове виробництво пластикових виробів FDM зверху. Без інвестицій в прес-форми — просто надайте STL.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__num">02</span>
+              <svg class="service-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-card__title">3D друк кріплень і тримачів</h3>
+            <p class="service-card__text">Надійний друк пластикових кріплень: автомобільні, монтажні кронштейни та передавачі.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__num">03</span>
+              <svg class="service-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </div>
+            <h3 class="service-card__title">3D друк технічних деталей</h3>
+            <p class="service-card__text">Виготовлення точних деталей з інженерних матеріалів: вкручування та кріплення в STEP.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__num">04</span>
+              <svg class="service-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="service-card__title">3D друк запчастин</h3>
+            <p class="service-card__text">Друк нестандартних запчастин для ремонту авто та побутової техніки за вашими 3D-моделями.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__num">05</span>
+              <svg class="service-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            </div>
+            <h3 class="service-card__title">3D друк прототипів</h3>
+            <p class="service-card__text">Швидке тестування концепцій та моделей виробу за однією STEP чи STL файлом.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__num">06</span>
+              <svg class="service-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="service-card__title">3D друк корпусів</h3>
+            <p class="service-card__text">Корпуси для радіоелектроніки та електроніки. Друкуємо від однієї деталі з різних матеріалів.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section why-us" id="about">
+    <div class="container">
+      <h2 class="section__title">Чому обирають LGS?</h2>
+      <p class="section__subtitle">
+        Ми — сучасна студія 3D-друку в Україні, яка спеціалізується на
+        швидкому та якісному перетворенні ваших цифрових моделей у фізичні
+        об'єкти. Приймаємо виключно готові файли, що автоматизувати процес
+        підготовки до друку та відправляємо замовлення в роботу у день
+        звернення.
+      </p>
+
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="feature-card__title">Швидко</h3>
+          <p class="feature-card__text">Відправляємо замовлення в роботу в день звернення. Друк від 1 дня.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="feature-card__title">Якісно</h3>
+          <p class="feature-card__text">Сучасне обладнання та перевірені матеріали, повне кожного виходу контролю якості.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3 class="feature-card__title">Без прес-форм</h3>
+          <p class="feature-card__text">Не потрібні прес-форми на початку. Просто завантажте STL, STEP файл і отримайте деталь.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="feature-card__title">По всій Україні</h3>
+          <p class="feature-card__text">Доставка Новою Поштою по всій Україні. Можливість самовивозу у Києві.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Order -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <h2 class="contact__title">Замовити <em>3D друк</em></h2>
+          <p class="contact__text">
+            Завантажте вашу 3D-модель або опишіть задачу, і ми зробимо
+            прорахунок протягом кількох годин. Приймаємо формати STL, OBJ,
+            STEP.
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__detail">
+              <span class="contact__label">Email</span>
+              <a href="mailto:info@lgs-print.com.ua" class="contact__value">info@lgs-print.com.ua</a>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__label">Телефон</span>
+              <a href="tel:+380441234567" class="contact__value">+380 (44) 123-45-67</a>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__label">Адреса</span>
+              <span class="contact__value">Київ, Україна</span>
+            </div>
+          </div>
+
+          <div class="contact__materials">
+            <span class="contact__label">Матеріали</span>
+            <div class="contact__tags">
+              <span class="tag">PLA</span>
+              <span class="tag">PETG</span>
+              <span class="tag">ABS</span>
+              <span class="tag">Nylon</span>
+              <span class="tag">TPU</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="orderForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ім'я *</label>
+              <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+380 (___) ___-__-__">
+          </div>
+
+          <div class="form-group">
+            <label>3D-модель (STL, OBJ, STEP)</label>
+            <div class="file-upload" id="fileUpload">
+              <input type="file" id="fileInput" accept=".stl,.obj,.step,.stp" hidden>
+              <span class="file-upload__text" id="fileLabel">Натисніть для завантаження файлу</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Коментар</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Кількість, матеріал, побажання..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Надіслати замовлення</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo">
+        <svg class="logo__icon" width="28" height="20" viewBox="0 0 28 20" fill="none">
+          <rect y="0" width="28" height="3" rx="1.5" fill="currentColor"/>
+          <rect y="8.5" width="20" height="3" rx="1.5" fill="currentColor"/>
+          <rect y="17" width="28" height="3" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="logo__text">LGS</span>
+      </a>
+      <p class="footer__copy">&copy; 2026 Laser Guard Systems. Всі права захищені.</p>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal__content">
+      <h3>Замовлення надіслано!</h3>
+      <p>Ми зв'яжемося з вами протягом кількох годин.</p>
+      <button class="btn btn--primary" id="modalClose">Закрити</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
