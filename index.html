@@ -229,7 +229,8 @@
           </div>
         </div>
 
-        <form class="contact__form" id="orderForm" name="order" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
+        <form class="contact__form" id="orderForm" name="order" method="POST" netlify netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="order">
           <p class="hidden"><input name="bot-field" tabindex="-1" autocomplete="off"></p>
 
           <div class="form-row">
