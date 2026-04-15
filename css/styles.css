@@ -670,6 +670,44 @@ a.contact__value:hover {
   color: var(--accent);
 }
 
+/* ========== Form Validation ========== */
+.hidden {
+  display: none !important;
+}
+
+.form-error {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #ef4444;
+  min-height: 0;
+  transition: min-height 0.2s;
+}
+
+.form-group--error input,
+.form-group--error textarea {
+  border-color: #ef4444 !important;
+}
+
+.form-group--error .form-error {
+  min-height: 1.2em;
+}
+
+#modelFile {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 /* ========== Footer ========== */
 .footer {
   border-top: 1px solid var(--border-color);

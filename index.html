@@ -229,37 +229,43 @@
           </div>
         </div>
 
-        <form class="contact__form" id="orderForm">
+        <form class="contact__form" id="orderForm" name="order" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
+          <p class="hidden"><input name="bot-field" tabindex="-1" autocomplete="off"></p>
+
           <div class="form-row">
             <div class="form-group">
               <label for="name">Ім'я *</label>
-              <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+              <input type="text" id="name" name="name" placeholder="Ваше ім'я" required maxlength="100">
+              <span class="form-error" id="nameError"></span>
             </div>
             <div class="form-group">
               <label for="email">Email *</label>
               <input type="email" id="email" name="email" placeholder="email@example.com" required>
+              <span class="form-error" id="emailError"></span>
             </div>
           </div>
 
           <div class="form-group">
             <label for="phone">Телефон</label>
             <input type="tel" id="phone" name="phone" placeholder="+380 (___) ___-__-__">
+            <span class="form-error" id="phoneError"></span>
           </div>
 
           <div class="form-group">
-            <label>3D-модель (STL, OBJ, STEP)</label>
+            <label for="modelFile">3D-модель (STL, OBJ, STEP)</label>
             <div class="file-upload" id="fileUpload">
-              <input type="file" id="fileInput" accept=".stl,.obj,.step,.stp" hidden>
+              <input type="file" id="modelFile" name="model-file" accept=".stl,.obj,.step,.stp">
               <span class="file-upload__text" id="fileLabel">Натисніть для завантаження файлу</span>
             </div>
           </div>
 
           <div class="form-group">
             <label for="comment">Коментар</label>
-            <textarea id="comment" name="comment" rows="4" placeholder="Кількість, матеріал, побажання..."></textarea>
+            <textarea id="comment" name="comment" rows="4" placeholder="Кількість, матеріал, побажання..." maxlength="2000"></textarea>
+            <span class="form-error" id="commentError"></span>
           </div>
 
-          <button type="submit" class="btn btn--primary btn--full">Надіслати замовлення</button>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Надіслати замовлення</button>
         </form>
       </div>
     </div>
